@@ -1,6 +1,6 @@
 ## Basic Configuration
 
-baseurl = "https://mghazwi.com" 
+baseurl = "/" 
 builddrafts = false
 canonifyurls = false
 languageCode = "en-US"

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohammed Alghazwi Dot Com</title>
+    <link>https://mghazwi.com/</link>
+    <description>Recent content on Mohammed Alghazwi Dot Com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate>
+    
+	<atom:link href="https://mghazwi.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>https://mghazwi.com/blog/hello/</link>
+      <pubDate>Fri, 23 Feb 2018 15:16:32 +0100</pubDate>
+      
+      <guid>https://mghazwi.com/blog/hello/</guid>
+      <description>Welcome to Blog!
+I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things like blockchain to simple but awesome things like coffee or travel.
+I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
+    </item>
+    
+    <item>
+      <title>{ About }</title>
+      <link>https://mghazwi.com/about/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://mghazwi.com/about/</guid>
+      <description>Mohammed tries to create things out of software and sometimes he breaks things. He fails often but every once in a while, he stumbles onto something. He loves learning new things and when he is not doing that, he can be seen:  Biking around the city. Hiking in the woods or climbing a mountain. Drinking coffee at the nearest starbucks with his macbook.  { Education }  RMIT University</description>
+    </item>
+    
+  </channel>
+</rss>

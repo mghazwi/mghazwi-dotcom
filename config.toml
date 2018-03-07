@@ -1,0 +1,63 @@
+## Basic Configuration
+
+baseurl = "https://mghazwi.com" 
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Mohammed Alghazwi"
+title = "Mohammed Alghazwi Dot Com"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+##disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+##googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Mohammed Alghazwi"
+intro = "Software Developer & Cybersecurity Researcher"
+description = "Now Software Developer, and independent Security Researcher. Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc @University_of_Auckland @New_Zealand."
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "mghazwi"
+instagram = "m.ghazwi"
+##xing = "<username>"
+linkedin = "mohammed-alghazwi-32650086"
+twitter = "mghazwi"
+##facebook = "<username>"
+##google = "<username>"
+##stackoverflow = "<username>"
+email = "m.ghazwi@gmail.com"
+
+## Extras
+[params.extra]
+copyright = "© 2018. Mohammed Alghazwi." 
+poweredby = true
+highlightjs = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 200
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 100
+    url = "/about/"

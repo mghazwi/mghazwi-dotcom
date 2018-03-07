@@ -23,7 +23,7 @@ enableRobotsTXT = true
 [params]
 author = "Mohammed Alghazwi"
 intro = "Software Developer & Cybersecurity Researcher"
-description = "Now Software Developer, and independent Security Researcher. Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc @University_of_Auckland @New_Zealand."
+description = "Now Software Developer, and independent Security Researcher. Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc in Computer Science @University_of_Auckland @New_Zealand."
 authorimage = "headshot.jpg"
 dateformat = "Jan 2, 2006"
 

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="/">
+
+<title>Mohammed Alghazwi Dot Com</title>
+
+<meta name="generator" content="Hugo 0.36.1" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">My First Pen Testing Experience</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON MAR 9, 2018 
+      
+      
+      
+      —
+      
+      
+      <a class="meta" href="/categories/tutorials">TUTORIALS</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<p>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&rsquo;t know <strong><a href="https://en.wikipedia.org/wiki/Penetration_test" target="_blank">penetration testing</a></strong> is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it. This was one of the most exciting courses I have ever taken. My experience was amazing but I probably gave this course more time than I should have because it made me focus less on other courses I have taken and ofcourse my master thesis. The web application that we were given was in .ova format. You can find it <strong><a href="https://drive.google.com/open?id=1DABXCzsU9wnsXNQtNY7BPnleedAlrx0g" target="_blank">here</a></strong> if you are interested. I will ommit the full details for now but a summary of the vulnerabilities is below.</p>
+
+<p>please note that these vulnerabilities were made intentianally for educational purposes and most of them are outdated.</p>
+
+<p>The ova file contains a web application (wordpress) for cooking site called “Boutique Vegan BBQ”. The web application can be accessed by updating the hosts file (located in /etc/hosts) to include the following entry: <ip address of vm> websecurity.com.</p>
+
+<h3 id="vul-1-unauthorized-access-to-user-files">Vul 1: Unauthorized access to user files</h3>
+
+<p>2 files located at <a href="http://websecurity.com/users.txt">http://websecurity.com/users.txt</a> and <a href="http://websecurity.com/test.txt">http://websecurity.com/test.txt</a> contain user data available that can be read without authorization.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Ensure you&rsquo;re not logged into website</p></li>
+
+<li><p>Browse to either <code>http://websecurity.com/users.txt</code> or <code>http://websecurity.com/test.txt</code></p></li>
+</ol>
+
+<p><img src="/img/pent/v101.png" alt="demo v101" /></p>
+
+<h3 id="vul-2-sql-injection-1-email">Vul 2: SQL Injection 1 - email</h3>
+
+<p>The web application is vulnerable to SQL injection. An SQL injection was found in the email field of the comment form. This allows the attacker to spoof on database information and possibly tamper with it.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to any page you can post comments, for example <code>http://websecurity.com/blog/</code></p></li>
+
+<li><p>Use <code>' OR '1'='1</code> as your email address,other fields can be any random data.</p></li>
+
+<li><p>The result of this is that it returns the first (because of LIMIT 1) user from the database which can be viewed in the page source as a comment.</p></li>
+</ol>
+
+<p><img src="/img/pent/v201.png" alt="demo v201" /></p>
+
+<h3 id="vul-3-sql-injection-2-redirect">Vul 3: SQL Injection 2 - redirect</h3>
+
+<p>The application is also vulnerable to SQL injection at a different location. In the login page, the attacker can use <code>redirect_to=</code> in the login PHP script <code>wp-login.php</code> to execute any SQL queries. This attack results in the same consequences as SQL injection 1.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li>Browse to <code>http://websecurity.com/wp-login.php?redirect_to=' or 1='1</code> or the encoded version <code>http://websecurity.com/wp-login.php?redirect_to=%27%20or%201=%271</code></li>
+</ol>
+
+<p>The result of this is that all users from the database are returned which can be viewed in the page source as a comment.</p>
+
+<p><img src="/img/pent/v301.png" alt="demo v301" /></p>
+
+<h3 id="vul-4-xss-1-search">Vul 4: XSS 1 - Search</h3>
+
+<p>A reflected cross site scripting vulnerability exists in the search field for the website allowing an attacker to execute arbitrary JavaScript in a client&rsquo;s browser, for instance by giving them a link with crafted parameters.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to any page with a website search field, such as <code>http://websecurity.com/</code></p></li>
+
+<li><p>Click the magnifying glass up top to open a search field</p></li>
+
+<li><p>Place <code>; alert(1);</code> into the search field and search by hitting enter</p></li>
+
+<li><p>A popup alert box with 1 will appear</p></li>
+</ol>
+
+<p><img src="/img/pent/v401.png" alt="demo v401" /></p>
+
+<h3 id="vul-5-xss-2-email">Vul 5: XSS 2 - Email</h3>
+
+<p>A reflected cross site scripting vulnerability is present in the email field of commenting allowing an attacker to execute arbitrary JavaScript in a client&rsquo;s browser, for instance having them submit a form. This piggybacks off the 2.2 SQL Injection 1 - email vulnerability by using the error thrown when bad SQL is given.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>In a browser other than chrome (Firefox, internet explorer 11 tested) browse to any page you can post comments, for example <code>http://websecurity.com/blog/</code></p></li>
+
+<li><p>Put <code>'&quot;&lt;script&gt;alert(1)&lt;/script&gt;</code> in the email field, fill other required fields with anything</p></li>
+
+<li><p>A popup alert box with 1 will appear</p></li>
+</ol>
+
+<p><img src="/img/pent/v501.png" alt="demo v501" /></p>
+
+<h3 id="vul-6-persistent-xss-1-messaging">Vul 6: Persistent XSS 1 - Messaging</h3>
+
+<p>Another XSS vulnerability exists in the subject of message. This attack is more complex than the previous XSS attacks since it requires login to the application first before launching the attack. This can be done by either having a user account or brute forcing passwords. The application doesn&#39;t have brute force protection. After gaining user access, the attacker can send private messages to other users that include XSS attack.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Login to the websecurity website</p></li>
+
+<li><p>Browse to your targets profile <a href="http://websecurity.com/members/TARGETUSER/">http://websecurity.com/members/TARGETUSER/</a></p></li>
+
+<li><p>Hit the Private Message button</p></li>
+
+<li><p>Put <code>&lt;script&gt;alert(1);&lt;/script&gt;</code> in the subject field and anything in the comment and hit send.</p></li>
+
+<li><p>When that user views their message, they will get an alert popup</p></li>
+</ol>
+
+<p><img src="/img/pent/v601.png" alt="demo v601" /></p>
+
+<h3 id="vul-7-persistent-xss-2-long-comments">Vul 7: Persistent XSS 2 - Long Comments</h3>
+
+<p>A second persistent cross site scripting vulnerability can be found from posting comments that are too long and get truncated. This vulnerability found [1] in WordPress and the database is the result of comments being stored in a field 65535 bytes long. If a comment is longer than this, it is truncated when stored. As comments allow certain html tags such as &lt;a&gt;, what may look like a safe and valid to the WordPress filter can become dangerous once truncated.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to any page you can post comments, for example <code>http://websecurity.com/blog/</code></p></li>
+
+<li><p>Put in the comment field the following:</p></li>
+</ol>
+
+<pre><code> &lt;a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA[65535A]AAA'&gt;&lt;/a&gt; 
+</code></pre>
+
+<ol>
+<li><p>Replace the <code>[65535A]</code> with <code>65535 (64k)</code> As (or any other character)
+A txt file with <code>65535</code> As can be found here if required <code>http://pastebin.com/9WvS7uLj</code></p></li>
+
+<li><p>A popup alert box with 1 will appear to anyone who mouseover the comment or area below it (due to 5000px by 5000px region)</p></li>
+</ol>
+
+<p><img src="/img/pent/v701.png" alt="demo v701" /></p>
+
+<h3 id="vul-8-persistent-xss-3-4-byte-characters">Vul 8: Persistent XSS 3 – 4 Byte Characters</h3>
+
+<p>Another cross site scripting vulnerability caused by a bug in WordPress due to how it handles 4 byte characters. This vulnerability relies on the submitted data to be truncated this time by exploiting the fact that WordPress doesn’t support 4 byte characters such as &#128169; [POO emoji], and truncates he message after them.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to any page you can post comments, for example <code>http://websecurity.com/blog/</code></p></li>
+
+<li><p>Put into the comment field the following</p>
+
+<pre><code>&lt;a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px 💩'&gt; 
+</code></pre></li>
+
+<li><p>A popup alert box with 1 will appear to anyone who mouseover the comment or area below it (due to 5000px by 5000px region)</p></li>
+</ol>
+
+<p><img src="/img/pent/v801.png" alt="demo v801" /></p>
+
+<h3 id="vul-9-persistent-xss-4-comment">Vul 9: Persistent XSS 4 - Comment</h3>
+
+<p>When an attacker gains access to the website using a user that has Editor authorization level, then the attacker can post a script in the comment field. This XSS attack is persistent and therefore can affect everyone who views the attacked page. A malicious user can also launch this attack.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Login into the website</p></li>
+
+<li><p>Login into the website with Editor authorized user or admin. I used &ldquo;Kostya&rdquo; after brute forcing password.</p></li>
+
+<li><p>Post a comment with <code>&lt;script&gt;alert(1);&lt;/script&gt;</code></p></li>
+
+<li><p>Any user who views the page with the comment on will have a popup alert box appear</p></li>
+</ol>
+
+<h3 id="vul-10-code-execution-1-filter">Vul 10: Code Execution 1 - Filter</h3>
+
+<p>A severe code execution vulnerability was found in the website. The vulnerability was found in the search field of the members page. Using a proxy, The attacker can change the value of &ldquo;Filter&rdquo; to any code to be executed in the server. The impact of this vulnerability is disastrous because the attacker would have control over the application server. This issue requires an immediate solution.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to the members page <code>http://websecurity.com/members/</code></p></li>
+
+<li><p>Start and attach proxy</p></li>
+
+<li><p>Put any data into the Search Members text field and search</p></li>
+
+<li><p>Intercept request with proxy</p></li>
+
+<li><p>Add (or modify) the filter field to be <code>cat /var/www/html/wp-config.php</code> (or other desired command)</p></li>
+</ol>
+
+<p><img src="/img/pent/v1001.png" alt="demo v1001" /></p>
+
+<p><img src="/img/pent/v1002.png" alt="demo v1002" /></p>
+
+<ol>
+<li><p>Forward request onto server</p></li>
+
+<li><p>The code be executed and the contents of the <code>wp-config.php</code> file will be visible in the response</p></li>
+</ol>
+
+<p><img src="/img/pent/v1003.png" alt="demo v1003" /></p>
+
+<h3 id="vul-11-code-execution-2-profile-images">Vul 11: Code Execution 2 - Profile Images</h3>
+
+<p>Another code execution vulnerability exists in the application but it is more limited to those who have user access or attackers who can gain user access through brute forcing which is not prevented in the application. The vulnerability is in uploading a profile image and the executed code is in the header comment section of the profile picture. This is major exploits and can affect the confidentiality, integrity and availability of data in the application.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Create a <code>.jpeg</code> image file</p></li>
+
+<li><p>Use a program that can modify the <code>JPEG Exif</code> data such as <code>jhead</code></p></li>
+
+<li><p>Modify the comment and put <code>echo EXPLOIT;</code> (or any other php code you&rsquo;d like executed)</p></li>
+
+<li><p>Login to the websecurity website</p></li>
+
+<li><p>Browse to your change profile photo page <code>http://websecurity.com/members/USERNAME/profile/change-avatar/</code></p></li>
+
+<li><p>Choose the edited <code>.jpeg</code> file and hit upload</p></li>
+
+<li><p>The text EXPLOIT will appear on the page</p></li>
+</ol>
+
+<p><img src="/img/pent/v1101.png" alt="demo v1101" /></p>
+
+<h3 id="vul-12-csrf">Vul 12: CSRF</h3>
+
+<p>The application is vulnerable to cross-site scripting request forgery (CSRF). An attacker can trick users to perform an undesired action such as posting comments on their behalf in this case. Tricking the user can be done using social engineering. This vulnerability can be seen by observing the behavior of the application as the value of the nonce is modified. This attack can affect integrity and repudiation of the application.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to any page you can post comments, for example <code>http://websecurity.com/blog/</code></p></li>
+
+<li><p>Start and attach proxy</p></li>
+
+<li><p>Put any data into comments</p></li>
+
+<li><p>Intercept request with proxy</p></li>
+
+<li><p>Modify <code>akismet_comment_nonce</code> and/or <code>ak_js</code></p></li>
+
+<li><p>With a modified nonce you&rsquo;d expect comment to be prevented, but it still appears normally</p></li>
+</ol>
+
+<p><img src="/img/pent/v1201" alt="demo v1201" /></p>
+
+<h3 id="vul-13-man-in-the-middle">Vul 13: Man-in-the-middle</h3>
+
+<p>The authentication process in the application is vulnerable to man-in-the-middle attacks since there is no encryption before transmitting data from the browser to the application. SSL ,which is standardly used in most web applications, is not used. Intercepting data can be difficult but when done can have major impact on the application.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>Browse to the login page <code>http://websecurity.com/wp-login.php</code></p></li>
+
+<li><p>Start and attach proxy</p></li>
+
+<li><p>Login with a username and password</p></li>
+
+<li><p>Intercept request with proxy</p></li>
+
+<li><p>You can see that the password in the POST request is plaintext</p></li>
+</ol>
+
+<p><img src="/img/pent/v1301.png" alt="demo v1301" /></p>
+
+<h3 id="vul-14-visible-index">Vul 14: Visible Index</h3>
+
+<p>There are numerous indexes within the website that can be accessed by anyone. Example of such indexes is <code>http://websecurity.com/wp-includes/</code>which contains some information about the website. This vulnerability , while not severe, still makes the website exposed to attackers.</p>
+
+<p><strong>Demo:</strong></p>
+
+<ol>
+<li><p>There are dozens to hundreds of index that can be viewed by a user, browse to any of them. One example is <code>http://websecurity.com/wp-content/plugins/buddypress/</code></p></li>
+
+<li><p>You can see the contents of the directory</p></li>
+</ol>
+
+<p><img src="/img/pent/v1401.png" alt="demo v1401.png" /></p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+      
+      
+      TAGS:
+      
+      
+      <a class="meta" href="/tags/pentest">PENTEST</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="/blog/hello/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Mohammed Alghazwi.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> </h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

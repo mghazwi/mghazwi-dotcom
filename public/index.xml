@@ -6,10 +6,19 @@
     <description>Recent content on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 09 Mar 2018 18:06:13 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Pen Testing Experience</title>
+      <link>/blog/pent/</link>
+      <pubDate>Fri, 09 Mar 2018 18:06:13 +0100</pubDate>
+      
+      <guid>/blog/pent/</guid>
+      <description>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&amp;rsquo;t know penetration testing is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it.</description>
+    </item>
     
     <item>
       <title>Hello</title>

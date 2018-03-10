@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/pent/</loc>
+    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/hello/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
   </url>
@@ -13,20 +18,20 @@
   </url>
   
   <url>
-    <loc>/categories/about/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/about/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/categories/about/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
-    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
+    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -44,7 +49,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
+    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pentest/</loc>
+    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,6 +68,12 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorials/</loc>
+    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Mohammed Alghazwi Dot Com</title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on Mohammed Alghazwi Dot Com</description>
+    <title>Tutorials on Mohammed Alghazwi Dot Com</title>
+    <link>/categories/tutorials/</link>
+    <description>Recent content in Tutorials on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 09 Mar 2018 18:06:13 +0100</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>/blog/pent/</guid>
       <description>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&amp;rsquo;t know penetration testing is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it.</description>
-    </item>
-    
-    <item>
-      <title>Hello</title>
-      <link>/blog/hello/</link>
-      <pubDate>Fri, 23 Feb 2018 15:16:32 +0100</pubDate>
-      
-      <guid>/blog/hello/</guid>
-      <description>Welcome to Blog!
-I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things like blockchain to simple but awesome things like coffee or travel.
-I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
     </item>
     
   </channel>

@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mghazwi.com/blog/hello/</loc>
+    <loc>/blog/hello/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/categories/about/</loc>
-    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mghazwi.com/tags/about/</loc>
+    <loc>/categories/about/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/blog/</loc>
-    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mghazwi.com/categories/</loc>
+    <loc>/tags/about/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/tags/hello/</loc>
+    <loc>/blog/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hello/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/categories/personal/</loc>
+    <loc>/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mghazwi.com/tags/</loc>
+    <loc>/categories/personal/</loc>
+    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2016-10-02T22:55:05-04:00</lastmod>
     <priority>0</priority>
   </url>

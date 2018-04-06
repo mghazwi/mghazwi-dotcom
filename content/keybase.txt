@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mghazwi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mghazwi.com
+  * I am mghazwi (https://keybase.io/mghazwi) on keybase.
+  * I have a public key ASDZDUqgJlLG6SjuTGW-GsGjl9lQNqc3c9os6AJ_JpLYewo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d90d4aa02652c6e928ee4c65be1ac1a397d95036a73773da2ce8027f2692d87b0a",
+      "host": "keybase.io",
+      "kid": "0120d90d4aa02652c6e928ee4c65be1ac1a397d95036a73773da2ce8027f2692d87b0a",
+      "uid": "737e896f082ca8a1371cdbf2544a0119",
+      "username": "mghazwi"
+    },
+    "merkle_root": {
+      "ctime": 1523011786,
+      "hash": "546c72c5073ee0dfc5a8513a553dfa7d092b3a872db97f2876ca75359910e8ffa50c8e6c17aaf4e3a985384ffa535893a14f69ea7b0324c6408e6c4ae17c25c1",
+      "hash_meta": "5b19ac77df824a7bcdc6627f93cb748fa7868411598dd73dbdbc41bc6413728e",
+      "seqno": 2345995
+    },
+    "service": {
+      "entropy": "eDXlk2b6AfVpx7RA7f/d6dnT",
+      "hostname": "mghazwi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523011850,
+  "expire_in": 504576000,
+  "prev": "aa033176e6f8a8165c745540689722a97c04c09afbb7a21cb6eca97c27b23ad1",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2Q1KoCZSxuko7kxlvhrBo5fZUDanN3PaLOgCfyaS2HsKp3BheWxvYWTESpcCCMQgqgMxdub4qBZcdFVAaJciqXwEwJr7t6IctuypfCeyOtHEIGVKOYORgtscKvocfnXHOSTY8S2Qk8eGs7JaBfWQhq+nAgHCo3NpZ8RAxgYTT0JupiqFJxgyfBx+dIHxfK671Znta7aCZHSFHZyrjjrCxwllTKcLbSJy+TTWkaOuR7TpNu4X/L6k9LawDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOh+Yk0n8fuu9hcZkJ/nT4uKUuuayR8QpjI6RnR1aydvo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mghazwi
+
+==================================================================

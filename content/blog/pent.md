@@ -1,5 +1,5 @@
 ---
-title: "My First Pen Testing Experience"
+title: "Pen Testing Experience"
 date: 2018-03-09T18:06:13+01:00
 draft: false
 slug: "" 

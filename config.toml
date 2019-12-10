@@ -23,14 +23,14 @@ enableRobotsTXT = true
 [params]
 author = "Mohammed Alghazwi"
 intro = "Software Developer & Cybersecurity Researcher"
-description = "Now Software Developer, and independent Security Researcher. Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc in Computer Science @University_of_Auckland @New_Zealand."
+description = "Now cybersecurity and privacy researcher, and PhD candidate at the University of Groningen (RUG). Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc in Computer Science @University_of_Auckland @New_Zealand."
 authorimage = "headshot.jpg"
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
 [params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+description = "Mohammed Alghazwi personal website and blog"
+keywords = "Mohammed,Alghazwi,blog,research,researcher,cybersecurity,privacy,blockchain,DLT,developer"
 
 ## Social Accounts
 [params.social]
@@ -46,7 +46,7 @@ email = "m.ghazwi@gmail.com"
 
 ## Extras
 [params.extra]
-copyright = "© 2018. Mohammed Alghazwi." 
+copyright = "© 2020. Mohammed Alghazwi." 
 poweredby = true
 highlightjs = true
 

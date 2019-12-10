@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal on Mohammed Alghazwi Dot Com</title>
+    <title>personal on Mohammed Alghazwi Dot Com</title>
     <link>/categories/personal/</link>
-    <description>Recent content in Personal on Mohammed Alghazwi Dot Com</description>
+    <description>Recent content in personal on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate>
@@ -18,7 +18,7 @@
       
       <guid>/blog/hello/</guid>
       <description>Welcome to Blog!
-I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things like blockchain to simple but awesome things like coffee or travel.
+I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things about my research like cybersecurity and blockchain to simple but awesome things like coffee or travel.
 I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
     </item>
     

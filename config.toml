@@ -24,7 +24,7 @@ enableRobotsTXT = true
 author = "Mohammed Alghazwi"
 intro = "Cybersecurity and Privacy Researcher"
 description = "Now cybersecurity and privacy researcher, and PhD candidate at the University of Groningen (RUG). Previously MSc in Cybersecurity @RMIT_University @Australia, and BSc in Computer Science @University_of_Auckland @New_Zealand."
-authorimage = "headshot.jpg"
+authorimage = "headshot.png"
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings

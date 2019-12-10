@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Mohammed Alghazwi Dot Com</title>
@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>My First Pen Testing Experience</title>
+      <title>Pen Testing Experience</title>
       <link>/blog/pent/</link>
       <pubDate>Fri, 09 Mar 2018 18:06:13 +0100</pubDate>
       
       <guid>/blog/pent/</guid>
-      <description>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&amp;rsquo;t know penetration testing is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it.</description>
+      <description>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&#39;t know penetration testing is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       
       <guid>/blog/hello/</guid>
       <description>Welcome to Blog!
-I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things like blockchain to simple but awesome things like coffee or travel.
+I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things about my research like cybersecurity and blockchain to simple but awesome things like coffee or travel.
 I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
     </item>
     

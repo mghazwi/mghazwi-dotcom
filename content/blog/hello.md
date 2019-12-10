@@ -18,7 +18,7 @@ From complicated things about my research like cybersecurity and blockchain to s
 
 I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.
 
-Stay toned for more. 
+Stay tuned for more. 
 
 ```javascript
 const coding = "is fun";

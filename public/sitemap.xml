@@ -4,37 +4,12 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
+    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/pent/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/pentest/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/tutorials/</loc>
-    <lastmod>2018-03-09T18:06:13+01:00</lastmod>
+    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
   </url>
   
   <url>
@@ -48,7 +23,17 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/personal/</loc>
+    <lastmod>2018-02-23T15:16:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2018-02-23T15:16:32+01:00</lastmod>
   </url>
   

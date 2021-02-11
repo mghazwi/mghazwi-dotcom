@@ -6,11 +6,7 @@
     <description>Recent content in personal on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate>
-    
-	<atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate><atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello</title>
       <link>/blog/hello/</link>
@@ -19,7 +15,7 @@
       <guid>/blog/hello/</guid>
       <description>Welcome to Blog!
 I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things about my research like cybersecurity and blockchain to simple but awesome things like coffee or travel.
-I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
+Stay tuned for more.</description>
     </item>
     
   </channel>

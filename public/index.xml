@@ -6,20 +6,7 @@
     <description>Recent content on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 09 Mar 2018 18:06:13 +0100</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Pen Testing Experience</title>
-      <link>/blog/pent/</link>
-      <pubDate>Fri, 09 Mar 2018 18:06:13 +0100</pubDate>
-      
-      <guid>/blog/pent/</guid>
-      <description>When I started, it all seemed so scary and difficult but the more I looked into it the easier it got. For those who don&#39;t know penetration testing is the art of finding vulnerabilities in systems, networks, or web applications. Pen testers are among the best in regards to security knowledge and probably the highest paid. During my masters degree, I took a pen testing course and we were instructed to find all vulnerabilities in a given web application and write a report about it.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 23 Feb 2018 15:16:32 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello</title>
       <link>/blog/hello/</link>
@@ -28,7 +15,7 @@
       <guid>/blog/hello/</guid>
       <description>Welcome to Blog!
 I have been meaning to write a blog for a while now, but I have been too busy. Finally now that I have some spare time to write about what I think on everything. From complicated things about my research like cybersecurity and blockchain to simple but awesome things like coffee or travel.
-I will also write about what I learn because that can actually help me remember things and help you the reader (hopefully) to understand and do fun things.</description>
+Stay tuned for more.</description>
     </item>
     
     <item>
@@ -37,7 +24,7 @@ I will also write about what I learn because that can actually help me remember 
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
       <guid>/about/</guid>
-      <description>Welcome to my personal webpage. I&#39;m currently a PhD candidate at the University of Groningen (RUG) doing research on security and privacy of medical records with experimentation of the use of blockchain and distributed ledger technologies in the healthcare field.  If you would like to collaborate or have any other inquiries, please contact me through my email.  Visit my University webpage for my latest research and academic activities.</description>
+      <description>Welcome to my personal webpage. I&#39;m currently a PhD candidate at the University of Groningen (RUG) doing research on security and privacy of medical records with experimentation of the use of blockchain and self-sovereign identity in the healthcare field.  If you would like to collaborate or have any other inquiries, please contact me through my email.  Visit my University webpage for my latest research and academic activities.</description>
     </item>
     
   </channel>

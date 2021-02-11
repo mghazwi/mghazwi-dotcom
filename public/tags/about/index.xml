@@ -6,18 +6,14 @@
     <description>Recent content in about on Mohammed Alghazwi Dot Com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
-    
-	<atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate><atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>{ About }</title>
       <link>/about/</link>
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
       <guid>/about/</guid>
-      <description>Welcome to my personal webpage. I&#39;m currently a PhD candidate at the University of Groningen (RUG) doing research on security and privacy of medical records with experimentation of the use of blockchain and distributed ledger technologies in the healthcare field.  If you would like to collaborate or have any other inquiries, please contact me through my email.  Visit my University webpage for my latest research and academic activities.</description>
+      <description>Welcome to my personal webpage. I&#39;m currently a PhD candidate at the University of Groningen (RUG) doing research on security and privacy of medical records with experimentation of the use of blockchain and self-sovereign identity in the healthcare field.  If you would like to collaborate or have any other inquiries, please contact me through my email.  Visit my University webpage for my latest research and academic activities.</description>
     </item>
     
   </channel>
